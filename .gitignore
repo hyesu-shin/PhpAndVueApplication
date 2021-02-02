@@ -1,0 +1,9 @@
+# Ignore File
+
+*.log
+*.bak
+
+# composer File
+
+vendor/
+.env
