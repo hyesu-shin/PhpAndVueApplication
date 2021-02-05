@@ -32,7 +32,7 @@
   require 'core/Bootstrap.php';
   
   // uri list인 routes 불러오기
-  $router = Router::load('routes.php'); 
+  $router = Router::load('Routes.php'); 
 
   // request_uri가 어떻게 들어오는지 알아야 함
   $uri = Request::uri();
