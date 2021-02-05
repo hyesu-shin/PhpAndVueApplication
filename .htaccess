@@ -1,4 +1,4 @@
-<Directory>
+<Directory /public>
   RewriteEngine On
   RewriteBase /
   RewriteRule ^([^.?]+)$ /index.php
