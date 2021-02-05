@@ -2,7 +2,7 @@
   // Connection.php와 QueryBuilder.php를 연결시키는 로직
 
   $app = [];
-  $app['config'] = require_once 'config.php';
+  $app['config'] = require_once 'Config.php';
 
   require 'database/Connection.php';
   require 'database/QueryBuilder.php';
