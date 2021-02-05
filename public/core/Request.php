@@ -5,7 +5,9 @@
   {
     public static function uri ()
     {
-      return trim($_SERVER['REQUEST_URI'], '/');
+      // request uri에서 path부분만 넘기기
+      $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+      return trim($request_uri, '/');
     }
   }
 ?>

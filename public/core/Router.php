@@ -15,6 +15,7 @@
       return $router;
     }
 
+    // routes 설정하는 부분
     public function define ($routes)
     {
       $this->routes = $routes;
