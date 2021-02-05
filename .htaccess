@@ -1,5 +1,5 @@
-<Directory /public>
+<IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
   RewriteRule ^([^.?]+)$ /index.php
-</Directory>
+</IfModule mod_rewrite.c>
