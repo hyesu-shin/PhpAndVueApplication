@@ -2,13 +2,12 @@
   AllowOverride none
   Require all denied
 
+  AddType application/x-httpd-php .php
+
   Header always set Access-Control-Allow-Origin "*"
 </Directory>
 
 <Directory /public>
-  Options Indexes FollowSymLinks MultiViews
-  AddType application/x-httpd-php .php
-
   AllowOverride All
 
   Require all granted
