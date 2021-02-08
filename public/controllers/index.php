@@ -1,3 +1,3 @@
 <?php
-  phpinfo();
+  require '/dist/index.html';
 ?>
