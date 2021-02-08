@@ -14,6 +14,6 @@
     require $router->direct($uri); 
   }
   else {
-    require $_SERVER["DOCUMENT_ROOT"].'/dist/index.html';
+    echo '111111';
   }
 ?>
