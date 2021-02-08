@@ -6,7 +6,7 @@
 </Directory>
 
 DocumentRoot "../../public"
-<Directory "/public">
+<Directory "../../public">
   Options Indexes FollowSymLinks MultiViews
   AddType application/x-httpd-php .php
 
