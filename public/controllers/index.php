@@ -1,3 +1,3 @@
 <?php
-  require '/dist/index.html';
+  require '../../dist/index.html';
 ?>
