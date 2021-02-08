@@ -14,7 +14,7 @@
   Require all granted
 
   RewriteEngine On
-  RewriteRule ^([^.?]+)$ /public/index.php
+  RewriteRule ^([^.?]+)$ ../../public/index.php
 </Directory>
 
 <IfModule dir_module>
