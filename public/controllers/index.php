@@ -1,3 +1,3 @@
 <?php
-  include $_SERVER["DOCUMENT_ROOT"].'/dist';
+  include $_SERVER["DOCUMENT_ROOT"].'/dist/*';
 ?>
