@@ -1,4 +1,5 @@
 <?php
+  require '../core/Bootstrap.php';
   // get or post
   $requestMethod = $_SERVER['REQUEST_METHOD'];
   $requestQueryString = $_SERVER['QUERY_STRING'];
