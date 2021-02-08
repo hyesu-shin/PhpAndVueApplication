@@ -1,5 +1,3 @@
-DocumentRoot "../../public"
-
 <Directory />
   AllowOverride none
   Require all denied
