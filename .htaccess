@@ -17,7 +17,7 @@
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule .? - [L]
 
-  RewriteRule .? %{ENV:BASE}/app.php [L]
+  RewriteRule .? %{ENV:BASE}/index.php [L]
 </Directory>
 
 <IfModule dir_module>
