@@ -1,3 +1,3 @@
 <?php
-  include $_SERVER["DOCUMENT_ROOT"].'/dist/*';
+  require $_SERVER["DOCUMENT_ROOT"].'/dist/index.html';
 ?>
