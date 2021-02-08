@@ -1,3 +1,4 @@
 <?php
-  echo "랄랄라~";
+  $_uri = explode('/', $uri); 
+  echo $_uri;
 ?>
