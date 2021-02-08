@@ -1,3 +1,3 @@
 <?php
-  require '../dist/index.html';
+  include '../dist/index.html';
 ?>
