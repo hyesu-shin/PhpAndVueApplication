@@ -2,7 +2,7 @@
   Options Indexes FollowSymLinks MultiViews
   AddType application/x-httpd-php .php
 
-  AllowOverride FileInfo
+  AllowOverride All
 
   Require all granted
 
