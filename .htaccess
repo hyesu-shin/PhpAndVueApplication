@@ -1,4 +1,6 @@
 <Directory "/public">
+  Header always set Access-Control-Allow-Origin "*"
+  
   Options Indexes FollowSymLinks MultiViews
   AddType application/x-httpd-php .php
 
