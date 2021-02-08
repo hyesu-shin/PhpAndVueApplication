@@ -8,7 +8,7 @@
 
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^([^.?]+)$ /index.php
+  RewriteRule ^([^.?]+)$/index.php
 </Directory>
 
 <IfModule dir_module>
