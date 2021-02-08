@@ -1,14 +1,21 @@
-Header always set Access-Control-Allow-Origin "*"
+<Directory />
+  AllowOverride none
+  Require all denied
 
-Options Indexes FollowSymLinks MultiViews
-AddType application/x-httpd-php .php
+  Header always set Access-Control-Allow-Origin "*"
+</Directory>
 
-AllowOverride All
+<Directory /public>
+  Options Indexes FollowSymLinks MultiViews
+  AddType application/x-httpd-php .php
 
-Require all granted
+  AllowOverride All
 
-RewriteEngine On
-RewriteRule ^([^.?]+)$ ./index.php
+  Require all granted
+
+  RewriteEngine On
+  RewriteRule ^([^.?]+)$ /public/index.php
+</Directory>
 
 <IfModule dir_module>
     DirectoryIndex index.html index.php
