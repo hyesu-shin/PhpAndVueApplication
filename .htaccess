@@ -15,7 +15,6 @@ DocumentRoot "../../public"
   Require all granted
 
   RewriteEngine On
-  RewriteBase /
   RewriteRule ^([^.?]+)$ /index.php
 </Directory>
 
