@@ -8,11 +8,11 @@
     switch ($requestMethod) {    // switch문으로 메서드 방식 필터링
       case 'GET':
         // QueryBuilder의 selectAll 함수 호출
-        $app['database']->selectAll('posts');
+        $app['database']->selectAll('post');
         break;
       case 'POST':
         // QueryBuilder의 create 함수 호출
-        $app['database']->create('posts');
+        $app['database']->create('post');
       default:
         break;
     }
@@ -22,11 +22,11 @@
     switch ($requestMethod) {
       case 'GET':
         // QueryBuilder의 selectId 함수 호출
-        $app['database']->selectId('posts', $_GET['id']);
+        $app['database']->selectId('post', $_GET['id']);
         break;
       case 'POST' :
         // QueryBuilder의 update 함수 호출
-        $app['database']->update('posts', $_POST['id']);
+        $app['database']->update('post', $_POST['id']);
         break;
       default:
         break;

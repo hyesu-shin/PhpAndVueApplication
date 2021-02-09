@@ -5,6 +5,6 @@
   $requestQueryString = $_SERVER['QUERY_STRING'];
 
   // QueryBuilder의 delete 함수 호출
-  $app['database']->delete('posts', $_POST['id']);
+  $app['database']->delete('post', $_POST['id']);
 
 ?>
