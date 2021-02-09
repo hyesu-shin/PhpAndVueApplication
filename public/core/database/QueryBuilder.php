@@ -16,7 +16,7 @@
     {
       $output = array();
 
-      $statement = $this->pdo->prepare("select * from {$table}");
+      $statement = $this->pdo->prepare("select * from {$table} order by desc");
       $statement->execute();
 
       $result = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -41,7 +41,7 @@
     // 디테일 출력 (id)
     public function selectId($table, $id)
     {
-      $statement = $this->pdo->prepare("select * from {$table} where id = {$id} order by desc");
+      $statement = $this->pdo->prepare("select * from {$table} where id = {$id}");
       $statement->execute();
 
       $result = $statement->fetch(PDO::FETCH_ASSOC);
