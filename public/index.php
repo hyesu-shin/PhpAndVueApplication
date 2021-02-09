@@ -9,11 +9,11 @@
   $uri = Request::uri();
   $_uri = explode('/', $uri);    // uri를 ('/') 단위로 쪼갬
 
-  if($_uri[0] == "api") {
+  if($_uri[0] == 'api') {
     // Router클래스의 메서드 : routes존재 여부 검사 후 redirect
     require $router->direct($uri); 
   }
   else {
-    echo '111111';
+    require $_SERVER['DOCUMENT_ROOT'].'/dist/index.html';
   }
 ?>
