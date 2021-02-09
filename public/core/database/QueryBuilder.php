@@ -16,7 +16,7 @@
     {
       $output = array();
 
-      $statement = $this->pdo->prepare("select * from {$table} order by desc");
+      $statement = $this->pdo->prepare("select * from {$table} order by id desc");
       $statement->execute();
 
       $result = $statement->fetchAll(PDO::FETCH_ASSOC);
