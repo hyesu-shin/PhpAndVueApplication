@@ -9,7 +9,7 @@
   $uri = Request::uri();
   $_uri = explode('/', $uri);    // uri를 ('/') 단위로 쪼갬
 
-  if($_url[0] == 'api') {
+  if($_url[0] == "api") {
     // Router클래스의 메서드 : routes존재 여부 검사 후 redirect
     require $router->direct($uri); 
   }
