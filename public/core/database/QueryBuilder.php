@@ -41,7 +41,7 @@
     // 디테일 출력 (id)
     public function selectId($table, $id)
     {
-      $statement = $this->pdo->prepare("select * from {$table} where id = {$id}");
+      $statement = $this->pdo->prepare("select * from {$table} where id = {$id} order by desc");
       $statement->execute();
 
       $result = $statement->fetch(PDO::FETCH_ASSOC);
